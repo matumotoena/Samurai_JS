@@ -11,13 +11,13 @@ body {
 
 /* -------------------- wrapper -------------------- */
 #wrapper {
-	width: 100%;
-	margin: auto;
-	padding: 0px;
-	border: 0px;
-	background-color: #FFF;	
-	top: 10px;
-	position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    border: 0px;
+    background-color: #FFF;	
+    top: 10px;
+    position: relative;
 }
 
 /* -------------------- header -------------------- */
@@ -81,12 +81,11 @@ body {
 	margin: auto ;
 	padding-top: 20px;
 	clear: both;
-	display: grid;
-	grid-template-columns: 70vw 30vw;
 }
 /* -------------------- main -------------------- */
 #main {
-	width: 95%;
+	float: left;
+	width: 60%;
 	padding: 10px 30px 10px 10px;
 }
 #main h2 {
@@ -125,7 +124,7 @@ body {
 
 /* -------------------- clearfix -------------------- */
 .clearfix {
-	zoom: 1;
+    zoom: 1;
 }
 .clearfix:after{
 	content: ""; 
@@ -135,7 +134,8 @@ body {
 
 /* -------------------- side -------------------- */
 #side {
-	width: 85%;
+	float: right;
+	width: 30%;
 	padding: 20px;
 	background-color: #F99;
 }

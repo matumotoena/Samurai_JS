@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScriptの練習</title>
+  </head>
+  <body>
+  <ul>
+    <li id="text" class="sample">１つ目の項目</li>
+    <li class="sample">２つ目の項目</li>
+  </ul>
+  <h1>サンプルタイトル</h1>
+  <h2>小見出し１</h2>
+  <button id="btn">実行</button>  
+  <script>
+    const text = document.getElementById('text');
+    const li = document.querySelector('li');
+ const sample = document.getElementsByClassName('sample');
+    console.log(text);
+    console.log(li);
+    console.log(sample);
+    const h2 = document.createElement('h2');
+    h2.textContent = '小見出し２';
+    h2.innerHTML = '<a href="#">小見出し２</a>';
+    document.body.appendChild(h2); 
+     const btn = document.getElementById('btn');
+
+      btn.addEventListener('click', () => {
+
+          console.log('クリックされました！');
+
+      });
+  </script>
+</body>
+</html>
